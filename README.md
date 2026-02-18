@@ -1,0 +1,2 @@
+- listing my gaps while learning DSA
+- putting up my solved questions topic wise

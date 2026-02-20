@@ -16,6 +16,7 @@ Formally:
 - https://leetcode.com/problems/course-schedule/description/ (Kahns Algorithm - Toposort - DAG cycle detection)
 - https://leetcode.com/problems/course-schedule-ii/description/
 - https://leetcode.com/problems/find-eventual-safe-states/description/
+- https://www.geeksforgeeks.org/problems/alien-dictionary/1 (super imp)
 
 
 ## 3. Multi-source BFS

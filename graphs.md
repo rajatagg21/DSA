@@ -14,7 +14,6 @@ Formally:
   - No cycles allowed
   - Precedence constraints
 
-
 - https://leetcode.com/problems/course-schedule/description/ (Kahns Algorithm - Toposort - DAG cycle detection)
 - https://leetcode.com/problems/course-schedule-ii/description/
 - https://leetcode.com/problems/find-eventual-safe-states/description/

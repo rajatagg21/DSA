@@ -14,6 +14,8 @@ Formally:
   - No cycles allowed
   - Precedence constraints
 
+- https://leetcode.com/problems/course-schedule/description/ (Kahns Algorithm - Toposort - DAG cycle detection)
+
 
 ## 3. Multi-source BFS
 - https://leetcode.com/problems/as-far-from-land-as-possible/description/ (Google Phone Screen L4)

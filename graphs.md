@@ -15,6 +15,7 @@ Formally:
   - Precedence constraints
 
 - https://leetcode.com/problems/course-schedule/description/ (Kahns Algorithm - Toposort - DAG cycle detection)
+- https://leetcode.com/problems/course-schedule-ii/description/
 
 
 ## 3. Multi-source BFS

@@ -88,4 +88,20 @@ Formally:
 }
 ```
 
-- 
+- https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1
+```json
+{
+"key_learning": [
+"Core abstraction: undirected graph cycle detection → either DFS with parent tracking or Union-Find (Disjoint Set Union) for incremental edge processing.",
+"Recognition trigger: "undirected" + "contains a cycle" → need to detect back-edge excluding immediate parent; parent-awareness is mandatory in DFS.",
+"Pattern classification: cycle in undirected graph ≠ back-edge to any visited node; must ignore the edge to the parent to avoid false positives.",
+"Alternative formulation: if during Union-Find processing two vertices of an edge already share the same root → cycle detected (connected components merging logic).",
+"Multiple components trigger: traversal must iterate across all vertices; unvisited node → start new DFS/BFS.",
+"Time complexity target: O(V + E) for DFS/BFS; O(E α(V)) for Union-Find with path compression and union by rank.",
+"Tradeoff insight: DFS exposes structure and supports follow-ups (cycle path retrieval); Union-Find is simpler for pure detection and dynamic edge addition.",
+"Edge-case awareness: self-loop immediately forms cycle; parallel edges between same vertices form cycle in undirected graph.",
+"Mental model reuse: cycle detection in undirected graphs underpins tree validation (tree = connected + acyclic) and redundant connection problems.",
+"Follow-up signal: if directed graph → shift to DFS with recursion stack or Kahn’s algorithm (topological sort) for cycle detection."
+]
+}
+```

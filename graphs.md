@@ -55,3 +55,18 @@ Formally:
 }
 ```
 
+- https://leetcode.com/problems/number-of-islands/description/
+```json
+{
+"key_learning": [
+"2D grid with adjacency constraints (horizontal/vertical) is an implicit graph; each land cell is a node and 4-directional neighbors define edges, reducing the problem to counting connected components.",
+"Trigger phrases like 'number of islands' and 'connected adjacent lands' map directly to flood-fill / connected-component traversal using DFS/BFS, or Union-Find if dynamic merging is required.",
+"Time complexity expectation is O(m*n) since every cell must be visited once; space tradeoff includes recursion stack vs explicit queue vs in-place mutation to eliminate auxiliary visited matrix.",
+"Mutating the grid to mark visited cells is a valid O(1) space optimization when input modification is allowed, demonstrating interview-level space awareness.",
+"Edge-case awareness includes empty grid, single cell, all water, all land, and handling boundary conditions without index overflow.",
+"Reusable mental model: any grid-based region-counting problem (islands, regions, blobs, clusters) follows identical component-count template with configurable neighbor directions (4 vs 8).",
+"Follow-up signals include largest island size, number of distinct shapes (shape normalization), dynamic addition of land (Union-Find incremental connectivity), or perimeter computation (boundary counting pattern)."
+]
+}
+```
+

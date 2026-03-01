@@ -26,7 +26,7 @@ Formally:
 
 ## 4. DFS/BFS
 - https://leetcode.com/problems/number-of-provinces/description/
-  ```
+  ```json
   {
 "key_learning": [
 "Transitive connectivity language (directly + indirectly connected) is a strong trigger for modeling the problem as an undirected graph and reducing it to counting connected components.",

@@ -39,3 +39,19 @@ Formally:
   ]
 }
 ```
+
+- https://leetcode.com/problems/detonate-the-maximum-bombs/description/
+```json
+{
+"key_learning": [
+"Chain reaction phrasing (one triggers others which further trigger) is a strong signal for modeling the system as a directed graph and computing reachability via DFS/BFS from each node.",
+"Geometric range condition (point within circle) translates into directed edge construction using distance comparison; this preprocessing is O(n^2) and dominates complexity for n up to typical interview limits.",
+"Problem reduces to finding the maximum reachable nodes from any single source in a directed graph (multi-source reachability maximization).",
+"Tradeoff thinking: DFS/BFS per node gives O(n*(n+e)) which is acceptable for n ≤ few hundreds; no need for Dijkstra since edges are unweighted; Union-Find is unsuitable because reachability is directional, not symmetric connectivity.",
+"Optimization awareness: precompute adjacency list once; avoid recomputing distances inside traversal; consider pruning if graph is sparse.",
+"Edge cases include isolated bombs (answer = 1), fully mutually reachable bombs (answer = n), and directional asymmetry where A triggers B but not vice versa.",
+"Follow-up signals: asking for minimum bombs to detonate all (minimum start nodes → strongly connected components condensation DAG), dynamic bomb insertion (incremental graph), or weighted radii constraints leading to geometric indexing optimizations."
+]
+}
+```
+

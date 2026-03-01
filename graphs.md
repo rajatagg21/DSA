@@ -72,7 +72,20 @@ Formally:
 
 - https://leetcode.com/problems/flood-fill/description/
 ```json
-{ "key_learning": [ "2D grid with 4-direction adjacency → implicit unweighted graph; cells are nodes, edges exist via boundary-checked neighbors.", "Trigger words: "adjacent", "shares same color", "keep repeating" → connected component traversal constrained by value equality.", "Core pattern: single-source region expansion (connected components) using DFS/BFS; equivalent to island-count style problems.", "Invariant: preserve original color before mutation; traversal condition must compare against original value, not mutated state.", "Critical edge case: if new color equals original color → no-op to prevent infinite reprocessing.", "Complexity target: O(m*n) time, O(m*n) worst-case space (recursion stack or queue); each cell visited at most once.", "DFS vs BFS tradeoff: DFS simpler but stack-overflow risk on large contiguous regions; BFS iterative and safer for deep grids.", "Visited-state strategy: either explicit visited matrix or in-place recoloring; ensure no double visits.", "Reusable mental model: region-growing problems = boundary-constrained graph traversal with monotonic state transition.", "Follow-up signals: 8-direction adjacency, multi-source fill, distance-based propagation, weighted transitions → shift to generalized BFS/Dijkstra.", "Scalability awareness: recursion depth proportional to region size; iterative approach preferred in production-scale grids.", "Boundary discipline: strict index validation before neighbor access; assume rectangular grid but handle 1x1 and thin grids." ] }
+{
+"key_learning": [
+"Implicit graph modeling: 2D grid with 4-directional adjacency forms an unweighted graph; flood fill is connected component traversal constrained by value equality.",
+"Recognition trigger: "directly adjacent" + "shares same color" + "keep repeating" → region expansion via DFS/BFS; this is a same-value connected component problem.",
+"State mutation vs visited tracking tradeoff: in-place recoloring can serve as visited marking if original color is cached; requires early exit when new color equals original.",
+"Time complexity target O(m*n) since each cell is processed at most once; space O(m*n) worst-case due to recursion stack or BFS queue.",
+"DFS vs BFS tradeoff: DFS is concise but risks stack overflow on large continuous regions; BFS provides controlled memory growth; iterative DFS avoids recursion limits.",
+"Boundary validation pattern: robust neighbor generation with bounds checks is critical to avoid invalid memory access; treat grid dimensions as dynamic not constant.",
+"Edge-case triggers: starting cell already has target color, single-cell grid, entire grid uniform, thin grids (1 x n or m x 1).",
+"Mental model reuse: identical structural pattern to Number of Islands, Surrounded Regions, and other grid connected-component labeling tasks.",
+"Follow-up signal: changing adjacency to 8 directions, introducing weights, distance limits, or multiple sources shifts traversal to multi-source BFS or Dijkstra.",
+"Optimization insight: region growth is proportional to reachable component size; worst-case full-grid traversal but no superlinear behavior is acceptable in interviews."
+]
+}
 ```
 
 - 

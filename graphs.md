@@ -106,3 +106,18 @@ Formally:
 }
 ```
 - https://leetcode.com/problems/detect-cycles-in-2d-grid/ (based on cycle detection only)
+- https://leetcode.com/problems/surrounded-regions/
+```json
+{
+"key_learning": [
+"Grid-as-graph abstraction: model each cell as a node with 4-directional edges; this reduces the problem to connected components classification with boundary constraints.",
+"Recognition trigger: 'connected horizontally or vertically' + 'region' → connected components; 'none on edge' → boundary reachability; invert thinking to mark boundary-connected components instead of checking enclosure per region.",
+"Core pattern: multi-source flood fill from boundary nodes; classify safe components first, then transform remaining nodes in-place; this avoids per-component enclosure validation.",
+"Tradeoff model: DFS (simpler, recursion depth risk) vs BFS (heap-backed queue, production-safe) vs Union-Find (explicit component tracking, higher constant factor); choose based on stack safety and memory constraints.",
+"Time-space expectation: O(mn) time with single traversal; O(1) extra space preferred via in-place marking; recursive stack O(mn) worst-case must be justified or avoided.",
+"Edge-case awareness: empty grid, single row/column, all 'O's, no 'O's, thin snake-like regions causing deep recursion, duplicate boundary processing.",
+"Reusable mental model: classify nodes by reachability from forbidden/privileged boundary set, then mutate the complement set; applicable to island counting, enclave detection, and percolation-style problems.",
+"Follow-up signals: diagonal connectivity variation (8-direction graph), weighted cells (requires Dijkstra), dynamic updates (Union-Find), count regions instead of mutate, or return region sizes (component aggregation)."
+]
+}
+```

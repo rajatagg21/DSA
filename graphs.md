@@ -23,3 +23,6 @@ Formally:
 ## 3. Multi-source BFS
 - https://leetcode.com/problems/as-far-from-land-as-possible/description/ (Google Phone Screen L4)
 - https://leetcode.com/problems/rotting-oranges/description/
+
+## 4. DFS/BFS
+- https://leetcode.com/problems/number-of-provinces/description/ (count connected components)

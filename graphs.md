@@ -140,5 +140,22 @@ Formally:
 "Follow-up signals: if rotations/reflections are considered identical → must generate all 8 transformations and choose minimal canonical form; if diagonal connectivity allowed → adjacency model changes to 8-direction graph."
 ]
 }
-
+```
+- https://leetcode.com/problems/is-graph-bipartite/description/
+```json
+{
+"key_learning": [
+"Core abstraction: undirected graph property verification; bipartiteness reduces to 2-coloring problem under adjacency constraints.",
+"Recognition trigger: "partition into two sets" + "every edge connects across sets" → graph coloring with 2 colors; equivalent to checking absence of odd-length cycles.",
+"Pattern classification: BFS/DFS level-order traversal with parity assignment; conflict detection when adjacent nodes share same color.",
+"Disconnected graph signal: must iterate across all nodes and initiate traversal for unvisited components.",
+"Time complexity target: O(V + E) mandatory; any superlinear approach unacceptable for interview-level graph problems.",
+"Space complexity expectation: O(V) for color/visited tracking and traversal queue/stack.",
+"Tradeoff thinking: BFS naturally enforces level parity (clean for bipartite); DFS equivalent but requires careful parent/color handling; Union-Find with parity useful for dynamic edge addition follow-ups.",
+"Key invariant: if during traversal an edge connects nodes of identical color → odd cycle detected → not bipartite.",
+"Edge-case awareness: isolated nodes are trivially bipartite; single-node graph valid; disconnected components must not short-circuit incorrectly.",
+"Reusable mental model: bipartite check = parity layering on graph; same reasoning applies to scheduling constraints, possible grouping, and constraint satisfaction with binary states.",
+"Follow-up signal: if directed graph → bipartite definition changes; if edges added dynamically → use Union-Find with parity tracking; if need to return partitions → store color groups explicitly."
+]
+}
 ```

@@ -122,4 +122,23 @@ Formally:
 }
 ```
 - https://leetcode.com/problems/number-of-enclaves/description/
-- 
+- https://www.geeksforgeeks.org/problems/number-of-distinct-islands/1
+```json
+{
+"key_learning": [
+"Core abstraction: 2D grid interpreted as an implicit unweighted graph; islands correspond to connected components under 4-directional adjacency.",
+"Recognition trigger: "connected 1s" → connected component discovery; "distinct" → canonical shape representation problem.",
+"Pattern classification: component traversal (DFS/BFS) + structural normalization (relative coordinate encoding or traversal signature).",
+"Key insight: translation invariance required (shift-invariant representation), but rotation/reflection are NOT considered equivalent → no need for geometric normalization beyond translation.",
+"Canonicalization mental model: store each island as coordinates relative to its starting cell or origin anchor to remove positional bias.",
+"Shape equivalence requires deterministic traversal order or post-processing normalization (e.g., sorted coordinate list) to avoid ordering artifacts.",
+"Time complexity target: O(n*m) traversal; additional O(K log K) per island for canonical sorting (K = island size); overall bounded by O(n*m log(n*m)).",
+"Space complexity expectation: O(n*m) for visited tracking plus storage of island shapes.",
+"Tradeoff thinking: DFS simpler for shape capture; BFS equivalent; Union-Find insufficient alone since structure (not just connectivity) must be recorded.",
+"Edge-case awareness: single-cell islands, entire grid one island, thin grids, checkerboard patterns, repeated identical shapes at different locations.",
+"Reusable pattern: this is "connected component labeling + canonical hashing" — similar to distinct subtrees, duplicate subtree detection, or shape fingerprinting problems.",
+"Follow-up signals: if rotations/reflections are considered identical → must generate all 8 transformations and choose minimal canonical form; if diagonal connectivity allowed → adjacency model changes to 8-direction graph."
+]
+}
+
+```

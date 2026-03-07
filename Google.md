@@ -2,6 +2,7 @@
 
 - https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/
 ```
+[
 **Brute → Optimal approach summary**
 
 **1. Brute Force Idea**
@@ -69,3 +70,5 @@ Return:
 **Core intuition:**
 We prune BFS states by **keeping only the best obstacle-elimination state per cell**, which removes redundant exploration and makes the solution memory efficient.
 ```
+
+]

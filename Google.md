@@ -1,6 +1,7 @@
-## Previous Interviews Graphs
+## Google Past Interview Problems (Graphs)
 
 - https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/
+
 ```markdown
 **Brute → Optimal approach summary**
 

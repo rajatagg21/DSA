@@ -67,3 +67,97 @@ Return:
 
 **Core intuition:**
 We prune BFS states by **keeping only the best obstacle-elimination state per cell**, which removes redundant exploration and makes the solution memory efficient.
+
+- https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/description/
+### Problem
+
+For each query `(u, v, limit)`:
+
+> Is there a path between `u` and `v` where **all edges have weight < limit**?
+
+---
+
+# 1️⃣ Brute Force Idea
+
+For **every query**:
+
+1. Build graph using **only edges with weight < limit**
+2. Run **BFS/DFS from u**
+3. Check if `v` reachable
+
+**Time**
+
+```
+O(Q * (V + E))
+```
+
+Too slow.
+
+---
+
+# 2️⃣ Observation
+
+Queries differ **only by the edge limit**.
+
+If limit increases → **more edges become usable**.
+
+Graph is **monotonically growing**.
+
+---
+
+# 3️⃣ Key Insight
+
+Instead of rebuilding graph each time:
+
+* **Sort edges by weight**
+* **Sort queries by limit**
+
+Process queries **in increasing limit order**.
+
+---
+
+# 4️⃣ Optimized Approach (DSU)
+
+Maintain connectivity using **Union Find**.
+
+For each query:
+
+```
+while edge_weight < limit:
+    union(edge)
+
+check find(u) == find(v)
+```
+
+Edges are **added only once**.
+
+---
+
+# 5️⃣ Complexity
+
+```
+Sorting edges:   O(E log E)
+Sorting queries: O(Q log Q)
+Union/Find:      ~O(E + Q)
+```
+
+Overall:
+
+```
+O(E log E + Q log Q)
+```
+
+---
+
+# 6️⃣ Core Intuition (1 line)
+
+> As the **limit grows**, keep **adding edges** and track connectivity with **DSU** instead of recomputing paths.
+
+---
+
+If you're doing **DSU prep for interviews**, this problem teaches a **very important pattern**:
+
+**“Offline queries + sorting + DSU incremental graph building.”**
+
+This pattern appears in **many hard problems**.
+

@@ -1,6 +1,7 @@
 ## Google Past Interview Problems (Graphs)
 
 - https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/
+
 **Brute → Optimal approach summary**
 
 **1. Brute Force Idea**
@@ -69,6 +70,7 @@ Return:
 We prune BFS states by **keeping only the best obstacle-elimination state per cell**, which removes redundant exploration and makes the solution memory efficient.
 
 - https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/description/
+
 ### Problem
 
 For each query `(u, v, limit)`:

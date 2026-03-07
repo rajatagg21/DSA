@@ -1,7 +1,7 @@
 ## Previous Interviews Graphs
 
 - https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/description/
-```python
+```json
 **Brute → Optimal approach summary**
 
 **1. Brute Force Idea**

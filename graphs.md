@@ -159,3 +159,25 @@ Formally:
 ]
 }
 ```
+## 5. Bridges and Cut Vertex
+- https://leetcode.com/problems/critical-connections-in-a-network/
+
+```json
+{
+"key_learning": [
+"Recognize 'removal disconnects graph' → bridge detection in an undirected graph → maps to Tarjan’s low-link algorithm",
+"Core abstraction: undirected graph + DFS traversal with discovery time (tin) and lowest reachable ancestor (low)",
+"Bridge condition pattern: edge (u,v) is critical if low[v] > tin[u] → no back-edge from subtree of v to u or above",
+"Pattern classification: articulation/bridge problems → subset of connectivity + cycle detection using DFS tree properties",
+"Key signal: 'directly or indirectly reachable' → connected components + transitive connectivity → graph modeling",
+"Avoid brute-force edge removal (O(E*(V+E))) → optimized linear time O(V+E) using single DFS pass",
+"Tradeoff: DFS-based Tarjan vs Union-Find → Union-Find cannot detect bridges in a single pass without offline tricks",
+"Maintain parent tracking in DFS to avoid falsely treating bidirectional edge as back-edge",
+"Edge-case awareness: disconnected graph → run DFS from all unvisited nodes; single node or no edges → no bridges",
+"Graph size expectations: up to ~10^5 nodes/edges → must use adjacency list + O(V+E) solution",
+"Low-link mental model: captures earliest reachable ancestor via back-edges → reusable for SCCs, articulation points, bridges",
+"Follow-up signals: 'remove node disconnects graph' → articulation points; 'strongly connected' → SCC (directed graph variant)"
+]
+}
+```
+

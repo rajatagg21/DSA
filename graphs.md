@@ -181,3 +181,45 @@ Formally:
 }
 ```
 
+## 6. MST
+
+Prims algo
+```
+#include <bits/stdc++.h>
+using namespace std;
+
+int prim(int n, vector<vector<pair<int,int>>>& adj) {
+    // {weight, node}
+    priority_queue<pair<int,int>, vector<pair<int,int>>, greater<>> pq;
+
+    vector<bool> visited(n, false);
+    pq.push({0, 0}); // start from node 0
+
+    int mst_weight = 0;
+    int nodes_taken = 0;
+
+    while (!pq.empty()) {
+        auto [wt, node] = pq.top();
+        pq.pop();
+
+        if (visited[node]) continue;
+
+        visited[node] = true;
+        mst_weight += wt;
+        nodes_taken++;
+
+        if (nodes_taken == n) break; // 🔥 stopping condition
+
+        for (auto &neighbor : adj[node]) {
+            int next = neighbor.first;
+            int weight = neighbor.second;
+
+            if (!visited[next]) {
+                pq.push({weight, next});
+            }
+        }
+    }
+
+    return mst_weight;
+}
+```

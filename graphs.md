@@ -223,3 +223,6 @@ int prim(int n, vector<vector<pair<int,int>>>& adj) {
     return mst_weight;
 }
 ```
+
+
+- https://leetcode.com/problems/min-cost-to-connect-all-points/description/

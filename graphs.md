@@ -226,3 +226,6 @@ int prim(int n, vector<vector<pair<int,int>>>& adj) {
 
 
 - https://leetcode.com/problems/min-cost-to-connect-all-points/description/
+
+## 7. Floyd Warshall Algorithm
+- https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance

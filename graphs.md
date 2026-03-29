@@ -7,6 +7,8 @@ Identification: Single source shortest paths (quite easy to identify)
 - https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/description/
 - https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/
 - https://leetcode.com/problems/swim-in-rising-water/description/
+- https://www.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1
+- https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/description/
 
 ## 2. Toposort
 Identification: Toposort applies if and only if: We need to order things such that dependencies are satisfied.

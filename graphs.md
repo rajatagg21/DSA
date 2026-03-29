@@ -28,6 +28,7 @@ Formally:
 - https://leetcode.com/problems/rotting-oranges/description/
 
 ## 4. DFS/BFS
+- https://leetcode.com/problems/longest-cycle-in-a-graph/description/
 - https://leetcode.com/problems/number-of-provinces/description/
 ```json
 {

@@ -20,7 +20,7 @@ Formally:
 - https://leetcode.com/problems/course-schedule-ii/description/
 - https://leetcode.com/problems/find-eventual-safe-states/description/
 - https://www.geeksforgeeks.org/problems/alien-dictionary/1 (super imp)
-- 
+- https://leetcode.com/problems/build-a-matrix-with-conditions/description/
 
 
 ## 3. Multi-source BFS

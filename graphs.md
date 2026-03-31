@@ -21,6 +21,7 @@ Formally:
 - https://leetcode.com/problems/find-eventual-safe-states/description/
 - https://www.geeksforgeeks.org/problems/alien-dictionary/1 (super imp)
 - https://leetcode.com/problems/build-a-matrix-with-conditions/description/
+- https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/
 
 
 ## 3. Multi-source BFS

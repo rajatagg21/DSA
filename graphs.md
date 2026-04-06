@@ -28,6 +28,7 @@ Formally:
 - https://leetcode.com/problems/as-far-from-land-as-possible/description/ (Google Phone Screen L4)
 - https://leetcode.com/problems/rotting-oranges/description/
 - https://leetcode.com/problems/01-matrix/
+- https://leetcode.com/problems/shortest-bridge/description/
 
 ## 4. DFS/BFS
 - https://leetcode.com/problems/longest-cycle-in-a-graph/description/

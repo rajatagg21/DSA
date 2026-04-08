@@ -29,6 +29,7 @@ Formally:
 - https://leetcode.com/problems/rotting-oranges/description/
 - https://leetcode.com/problems/01-matrix/
 - https://leetcode.com/problems/shortest-bridge/description/
+- https://leetcode.com/problems/escape-the-spreading-fire/
 
 ## 4. DFS/BFS
 - https://leetcode.com/problems/longest-cycle-in-a-graph/description/

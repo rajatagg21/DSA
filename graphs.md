@@ -9,6 +9,7 @@ Identification: Single source shortest paths (quite easy to identify)
 - https://leetcode.com/problems/swim-in-rising-water/description/
 - https://www.geeksforgeeks.org/problems/minimum-multiplications-to-reach-end/1
 - https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/description/
+- https://leetcode.com/problems/maximum-path-quality-of-a-graph/description/ (Hard Google L4 Onsite)
 
 ## 2. Toposort
 Identification: Toposort applies if and only if: We need to order things such that dependencies are satisfied.

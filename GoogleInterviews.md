@@ -1,5 +1,5 @@
 ## Extraction Prompt
-'''{json}
+```json
 <post_start> ... <post_end>
 
 Given the text taken from leetcode post. You have to extract leetcode problems out of it. and give most closest leetcode problems to a given problem. 
@@ -12,7 +12,7 @@ Close Leetcode Problems:
 
 
 Topic tags should include data structure or related algorithm. 
-'''
+```
 
 - https://leetcode.com/discuss/post/6251197/google-l4-interview-experience-by-anonym-thmi/
 ---

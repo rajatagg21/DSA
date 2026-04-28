@@ -334,4 +334,280 @@ Here’s a clean extraction + mapping of the closest LeetCode problems based on 
 
 ---
 
+- https://leetcode.com/discuss/post/6033289/google-l3-interview-experience-oct-2024-0xzt8/
 
+Here’s a clean mapping of each problem to closest LeetCode-style problems and relevant topics:
+
+---
+
+### **Problem 1: Router Message Propagation (BFS within distance d)**
+
+**Topic Tags:** Graph, BFS, Shortest Path, Weighted Graph
+
+**Close Leetcode Problems:**
+
+* 1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance
+* 743. Network Delay Time
+* 787. Cheapest Flights Within K Stops
+* 542. 01 Matrix
+
+---
+
+### **Problem 1 (Follow-up): Only Nearest Router Propagation**
+
+**Topic Tags:** Graph, BFS, Greedy, Dijkstra-like Traversal
+
+**Close Leetcode Problems:**
+
+* 1631. Path With Minimum Effort
+* 1514. Path with Maximum Probability
+* 778. Swim in Rising Water
+
+---
+
+### **Problem 2: Minimum Cost to Disconnect All Leaf Nodes in Tree**
+
+**Topic Tags:** Tree, DFS, DP on Trees, Greedy, Minimum Cut
+
+**Close Leetcode Problems:**
+
+* 968. Binary Tree Cameras
+* 979. Distribute Coins in Binary Tree
+* 1245. Tree Diameter
+* 2313. Minimum Flips in Binary Tree to Get Result
+
+---
+
+### **Problem 3: Expression Evaluation (add, sub, mul, pow)**
+
+**Topic Tags:** Stack, Expression Parsing, Recursion
+
+**Close Leetcode Problems:**
+
+* 224. Basic Calculator
+* 227. Basic Calculator II
+* 772. Basic Calculator III
+* 150. Evaluate Reverse Polish Notation
+
+---
+
+### **Problem 4: Find Indexes of '1' Using query(L, R)**
+
+**Topic Tags:** Binary Search, Divide and Conquer, Interactive Problem, Segment Tree Concept
+
+**Close Leetcode Problems:**
+
+* 374. Guess Number Higher or Lower
+* 278. First Bad Version
+* 1533. Find the Index of the Large Integer
+* 1095. Find in Mountain Array
+
+---
+
+### **Problem 4 (Follow-up): Partition Array into Subarrays with k Ones**
+
+**Topic Tags:** Prefix Sum, Binary Search, Sliding Window
+
+**Close Leetcode Problems:**
+
+* 930. Binary Subarrays With Sum
+* 1248. Count Number of Nice Subarrays
+* 560. Subarray Sum Equals K
+* 209. Minimum Size Subarray Sum
+
+---
+
+- https://leetcode.com/discuss/post/5979952/google-london-l4-aug-oct-24-offer-accept-vb8y/
+
+Here’s a clean extraction + mapping of the problems described in the post to closest LeetCode problems:
+
+---
+
+**Problem:**
+Design a data structure to find the average of the last *n* elements in a stream, with a follow-up to ignore the highest values.
+
+**Topic Tags:**
+Queue, Sliding Window, Heap (Priority Queue), Design
+
+**Close Leetcode Problems:**
+
+* Moving Average from Data Stream (LC 346)
+* Find Median from Data Stream (LC 295) *(for heap-based thinking)*
+* Sliding Window Maximum (LC 239) *(conceptual overlap for window maintenance)*
+
+---
+
+**Problem:**
+Graph shortest path problem with BFS; includes follow-up requiring multiple BFS runs.
+
+**Topic Tags:**
+Graph, BFS, Shortest Path
+
+**Close Leetcode Problems:**
+
+* Shortest Path in Binary Matrix (LC 1091)
+* Word Ladder (LC 127)
+* Rotting Oranges (LC 994) *(multi-source BFS pattern)*
+* 01 Matrix (LC 542) *(multiple BFS optimization)*
+
+---
+
+**Problem:**
+Graph problem involving topological sorting (initially not identified directly).
+
+**Topic Tags:**
+Graph, Topological Sort, DFS, BFS (Kahn’s Algorithm), DAG
+
+**Close Leetcode Problems:**
+
+* Course Schedule (LC 207)
+* Course Schedule II (LC 210)
+* Alien Dictionary (LC 269)
+* Parallel Courses (LC 1136)
+
+---
+
+- https://leetcode.com/discuss/post/5807042/google-l4-india-rejected-by-anonymous_us-37up/
+
+Here’s a structured extraction from your post, mapping each mentioned/implicit problem to the closest LeetCode problems:
+
+---
+
+### Problem:
+
+Single-threaded CPU scheduling (process tasks based on enqueue time + processing time)
+
+**Topic Tags:** Heap (Priority Queue), Sorting, Simulation
+
+**Close Leetcode Problems:**
+
+* Single-Threaded CPU
+* Task Scheduler (variation with scheduling constraints)
+
+---
+
+### Problem:
+
+Placing minimum cameras in a binary tree to monitor all nodes
+
+**Topic Tags:** Binary Tree, DFS, Greedy
+
+**Close Leetcode Problems:**
+
+* Binary Tree Cameras
+* Binary Tree Maximum Path Sum (similar DFS tree-state propagation pattern)
+
+---
+
+### Problem:
+
+Removing maximum stones using row/column connectivity (connected components)
+
+**Topic Tags:** Disjoint Set Union (DSU), Graph, Connected Components
+
+**Close Leetcode Problems:**
+
+* Most Stones Removed with Same Row or Column
+* Number of Provinces (classic DSU)
+* Accounts Merge (DSU with mapping)
+
+---
+
+### Problem:
+
+Unknown string problem (brute force solved, optimization missing)
+
+**Topic Tags:** Strings, Sliding Window / Hashing / DP (likely), Optimization
+
+**Close Leetcode Problems (most probable patterns based on interview trends):**
+
+* Longest Substring Without Repeating Characters (sliding window optimization jump from brute force)
+* Minimum Window Substring (classic optimization-heavy string problem)
+* Longest Repeating Character Replacement (two-pointer optimization)
+
+---
+
+- https://leetcode.com/discuss/post/5741664/google-l4-backened-bangalore-or-hyderaba-dard/
+
+Here’s a structured extraction + mapping of the problems described, with closest LeetCode equivalents and proper topic tagging.
+
+---
+
+### Problem:
+
+Initial BFS question → Modified to shortest path with obstacles (Dijkstra)
+
+Topic Tags:
+Graph, BFS, Dijkstra, Shortest Path, Priority Queue, Grid
+
+Close Leetcode Problems:
+
+* 1091. Shortest Path in Binary Matrix
+* 1631. Path With Minimum Effort
+* 743. Network Delay Time
+* 778. Swim in Rising Water
+
+---
+
+### Problem:
+
+Two-source BFS (two diseases spreading), one dominates and blocks the other; check if weaker one reaches destination
+
+Topic Tags:
+Graph, Multi-source BFS, Simulation, Grid Traversal, Competition/Blocking
+
+Close Leetcode Problems:
+
+* 994. Rotting Oranges
+* 2258. Escape the Spreading Fire
+* 542. 01 Matrix
+* 1926. Nearest Exit from Entrance in Maze
+
+---
+
+### Problem:
+
+Given employee arrival & departure times, print active employees in each time interval
+
+Topic Tags:
+Sweep Line, Intervals, Sorting, Events, Simulation
+
+Close Leetcode Problems:
+
+* 253. Meeting Rooms II
+* 759. Employee Free Time
+* 56. Merge Intervals
+* 732. My Calendar III
+
+---
+
+### Problem:
+
+Find peak element in mountain array with duplicates
+
+Topic Tags:
+Binary Search, Arrays, Peak Finding, Edge Cases
+
+Close Leetcode Problems:
+
+* 162. Find Peak Element
+* 852. Peak Index in a Mountain Array
+* 1095. Find in Mountain Array
+
+---
+
+### Problem:
+
+(Extra coding round – Array question, unspecified but likely pattern-based)
+
+Topic Tags:
+Array, Two Pointers / Prefix / Sliding Window (context-dependent)
+
+Close Leetcode Problems:
+
+* 53. Maximum Subarray
+* 238. Product of Array Except Self
+* 560. Subarray Sum Equals K
+* 11. Container With Most Water
+
+---

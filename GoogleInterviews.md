@@ -68,3 +68,81 @@ Dynamic Programming, Binary Search, LIS, Greedy
 * Number of Longest Increasing Subsequence
 * Longest Arithmetic Subsequence
 * Russian Doll Envelopes
+
+
+- https://leetcode.com/discuss/post/6138690/google-l3-onsite-interview-question-by-a-w45z/
+
+**Problem:**
+Given a string `s`, count the number of triplets `(i, j, k)` such that the substring `s[i...j]` and `s[j+1...k]` have the same number of **distinct characters**.
+
+---
+
+**Topic Tags:**
+
+* Prefix Sum
+* Binary Search
+* Sliding Window
+* Hashing / Frequency Count
+* Bitmasking (alternative approach)
+* Two Pointers
+
+---
+
+**Close Leetcode Problems:**
+
+* 992. Subarrays with K Different Integers
+* 340. Longest Substring with At Most K Distinct Characters
+* 159. Longest Substring with At Most Two Distinct Characters
+* 1371. Find the Longest Substring Containing Vowels in Even Counts
+* 1915. Number of Wonderful Substrings
+* 1542. Find Longest Awesome Substring
+
+---
+
+### 💡 Insight (what interviewer was hinting)
+
+You already explored:
+
+* **Brute force + set** → O(n³) / O(n² log n)
+* **Bitmask** → optimize distinct tracking
+
+The **Binary Search angle** comes from this key idea:
+
+Fix `j` (middle split point):
+
+* For left side `[i...j]`, track distinct count as you move `i → 0`
+* For right side `[j+1...k]`, you want **same distinct count**
+
+Now:
+
+* Precompute `rightDistinct[j][k]` OR more efficiently maintain a structure
+* For a fixed `j` and a distinct count `d`, you want to count how many `k` exist such that:
+
+  ```
+  distinct(s[j+1...k]) == d
+  ```
+
+👉 This becomes a **range counting problem**, where:
+
+* Distinct count is **monotonic non-decreasing** as `k` increases
+* So you can:
+
+  * Use **binary search to find first and last k** where distinct count == d
+  * Count range size
+
+---
+
+### ⚡ Clean Optimized Approach (High Level)
+
+1. Fix `j`
+2. Move `i` backward → maintain left distinct count
+3. For each distinct count `d`:
+
+   * Use **binary search on right side** to count valid `k`
+4. Sum all contributions
+
+Time complexity:
+
+* ~ **O(n² log n)** (better than brute, alternative to bitmask O(n²))
+
+- 

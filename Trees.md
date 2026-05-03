@@ -6,3 +6,5 @@
 - https://leetcode.com/problems/delete-node-in-a-bst/description/
 - https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
 - https://leetcode.com/problems/validate-binary-search-tree/description/
+- https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/
+- https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/

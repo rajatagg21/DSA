@@ -3,3 +3,4 @@
 - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
 - https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/
 - https://leetcode.com/problems/single-element-in-a-sorted-array/description/
+- https://leetcode.com/problems/find-peak-element/description/
